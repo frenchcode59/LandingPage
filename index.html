@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
     <title>LandingPage</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/logo-devatopia.svg"
+            style="width: 25%"
+            alt="devatopia"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Technologies et services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Technologies">Notre equipe</a>
+            </li>
+          </ul>
+          <a href="" class="btn btn-primary ms-lg-3">contactez nous</a>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-uppercase fw-semibold display-1 text-white">
+              Bienvenue chez devatopia !
+            </h1>
+            <h5 class="text-white mt-3 mb-4">
+              Nous vous acompagnons dans la création , refonte ou améliorations
+              de votre application mobile ou web . Nous vous aidons a donner vie
+              a vos idées ! Réalisons ensemble votre projet correspondant au
+              mieux a vos besoins . Un projet sur mesure.
+            </h5>
+            <div>
+              <a href="#" class="btn btn-primary me-2 mt-5">contactez nous</a>
+              <a href="#" class="btn btn-light ms-3 mt-5">Nos projet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="technologies" class="section-padding border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Nos services et technologies</h1>
+              <div class="line"></div>
+              <p>Vous avez besoin d'un acompagnement complet ou sur mesure ?<br> Notre équipe vous accompagne dans votre projet et met a dispositions ses competences . </p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5  p-4">
+              <div class="iconbox">
+                <i class="fa-solid fa-laptop fa-2xl"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Developpement web</h5>
+              <p>
+                Nous vous accompagnons dans la création de votre site web
+                vitrine ou e-commerce . Nous vous aidons a donner vie a vos
+                idées ! Réalisons ensemble votre projet correspondant au mieux
+                a vos besoins . Un projet sur mesure.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+<script src="https://kit.fontawesome.com/46f585b8fa.js" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
