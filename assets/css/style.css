@@ -40,9 +40,25 @@ img{
 .theme-shadow{
     box-shadow: var(--box-shadow-b);
 }
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.image-zoom-wrapper img{
+    transition: var(--transition);
+}
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
 .navbar{
     .navbar {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+        z-index: 3;
     }
 }
 .navbar-nav .nav-link{
@@ -94,4 +110,23 @@ a.btn-primary:hover{
         height: 100%;
         background: var(--c-brand);
         z-index: -1;
+    }
+    #number{
+        background: linear-gradient(rgba(var(--c-brand-rgb),0.8),rgba(0,0,0,0.8)),url(/assets/images/bureau.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .project-item .iconbox{
+        background-color: var(--c-brand);
+        color: white;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .project-item:hover .iconbox{
+        opacity: 1;
+        top: 50%;
     }
