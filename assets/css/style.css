@@ -90,6 +90,16 @@ a.btn-primary:hover{
     background-position: center;
     background-size: cover;
 }
+.section-title{
+    margin-bottom: 60px;
+}
+.section-title .line{
+    width: 60px;
+    height: 3px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+    
+}
 .service{
     position: relative;
     overflow: hidden;
@@ -129,4 +139,22 @@ a.btn-primary:hover{
     .project-item:hover .iconbox{
         opacity: 1;
         top: 50%;
+    }
+    .team-member-content{
+        background-color: var(--c-brand);
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        width: calc(100% - 50px);
+        transform: translate(-50%);
+        padding: 24px;
+        transition: var(--transition);
+        opacity: 0;
+    }
+    .team-member:hover .team-member-content{
+        opacity: 1;
+        bottom: 24px;
+    }
+    .logo{
+        width: 10%;
     }
